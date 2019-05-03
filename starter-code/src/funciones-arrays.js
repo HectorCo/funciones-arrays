@@ -1,5 +1,13 @@
 // Find the maximum
 
+function maxOfTwoNumbers(param1,param2) {
+  if (param1>param2){
+    return param1;
+  }
+  
+  return param2;
+}
+
 // Finding Longest Word
 let words = [
   'mystery',
@@ -10,6 +18,24 @@ let words = [
   'orchard',
   'crackpot'
 ];
+
+function findLongestWord(words) {
+  let palabraMaslarga = "";
+  let longitudMaxima = 0;
+
+
+  for (i=0; i<words.length; i++){
+    let longitud = words[i].length;
+
+  if (longitud>longitudMaxima){
+    longitudMaxima = longitud;
+    palabraMaslarga = words[i];
+
+  }
+  
+  }
+  
+}
 
 // Calculating a Sum
 
